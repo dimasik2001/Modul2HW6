@@ -11,18 +11,23 @@ namespace Modul2HW6.Helpers
     {
         public int Compare(object x, object y)
         {
-            var first = x as Appliance;
-            var second = y as Appliance;
-            if (first == null || second == null)
+            var first = (x as Appliance)?.Power;
+            var second = (y as Appliance)?.Power;
+            if (!(x is Appliance))
             {
-                throw new NotImplementedException("Failed to compare");
+                first = 0;
             }
 
-            if (first.Power > second.Power)
+            if (!(y is Appliance))
+            {
+                second = 0;
+            }
+
+            if (first > second)
             {
                 return 1;
             }
-            else if (first.Power < second.Power)
+            else if (first < second)
             {
                 return -1;
             }

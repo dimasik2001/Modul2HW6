@@ -29,7 +29,7 @@ namespace Modul2HW6
         public void Run()
         {
             var rnd = new Random();
-            for (var i = 0; i < _capacity; i++)
+            for (var i = 0; i < _capacity - 1; i++)
             {
                 var num = rnd.Next(_appliencesProvider.GetData().Length);
                 InsertToSocket(num);

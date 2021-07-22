@@ -28,8 +28,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\Appliances\ComputingDevices\Portables\" />
-  </ItemGroup>
-
 </Project>

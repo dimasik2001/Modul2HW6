@@ -1,4 +1,7 @@
-﻿using Modul2HW6.Enums;
+﻿using Appliances.Models.Appliances.ComputingDevices.Portables;
+using Appliances.Models.Appliances.ComputingDevices.Portables.Laptops;
+using Appliances.Models.Appliances.ComputingDevices.Portables.Smartphones;
+using Modul2HW6.Enums;
 using Modul2HW6.Models;
 using Modul2HW6.Models.Appliances.ComputingDevices.Stations;
 using Modul2HW6.Models.Appliances.ComputingDevices.Stations.MultiMedias;
@@ -113,6 +116,61 @@ namespace Modul2HW6.Providers
                     Price = 40000,
                     Producer = Company.Apple,
                 },
+
+                new Notebook()
+                {
+                    DegreeOfOpening = 140,
+                    BateryCapacity = 25000,
+                    Color = Color.Green,
+                    OS = OperatingSystem.Ubuntu,
+                    Power = 400,
+                    Price = 28000,
+                    ProcessorFrequency = 3100,
+                    Producer = Company.HewlettPackard
+                },
+
+                new TouchLaptop()
+                {
+                    DegreeOfOpening = 120,
+                    TouchQuantity = 6,
+                    MatrixType = MatrixType.IPS,
+                    FingerPrintScaner = false,
+                    BateryCapacity = 13800,
+                    Color = Color.Black,
+                    OS = OperatingSystem.Windows,
+                    Power = 200,
+                    Price = 23000,
+                    ProcessorFrequency = 1600,
+                    Producer = Company.Lenovo
+                },
+
+                new PushButtonPhone()
+                {
+                    KeyboardType = KeyboardType.Rubber,
+                    BateryCapacity = 1000,
+                    Color = Color.Violet,
+                    ProcessorFrequency = 300,
+                    OS = OperatingSystem.Symbian,
+                    Power = 10,
+                    Price = 800,
+                    SimCardQuantity = 2,
+                    Producer = Company.Nokia
+                },
+
+                new TouchscreenPhone()
+                {
+                    BateryCapacity = 6000,
+                    Color = Color.Black,
+                    FingerPrintScaner = true,
+                    ProcessorFrequency = 1600,
+                    MatrixType = MatrixType.AMOLED,
+                    OS = OperatingSystem.Android,
+                    Power = 10,
+                    TouchQuantity = 5,
+                    Price = 15999,
+                    Producer = Company.Google,
+                    SimCardQuantity = 2
+                }
             };
         }
 

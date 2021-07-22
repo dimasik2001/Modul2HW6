@@ -10,7 +10,7 @@ namespace Modul2HW6.Helpers
             var counter = 0;
             foreach (var item in appliances)
             {
-                if (item.Color == color)
+                if (item != null && item.Color == color)
                 {
                     counter++;
                 }
@@ -20,7 +20,7 @@ namespace Modul2HW6.Helpers
 
             foreach (var item in appliances)
             {
-                if (item.Color == color)
+                if (item != null && item.Color == color)
                 {
                     result[--counter] = item;
                 }

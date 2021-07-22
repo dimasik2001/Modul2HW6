@@ -50,6 +50,7 @@ namespace Modul2HW6.Services
         public void SortByPower()
         {
             Array.Sort(_appliances, new PowerComparer());
+            Array.Reverse(_appliances);
         }
 
         public double GetFullPower()
@@ -57,7 +58,10 @@ namespace Modul2HW6.Services
             var sum = 0d;
             foreach (var item in _appliances)
             {
-                sum += item.Power;
+                if (item != null)
+                {
+                    sum += item.Power;
+                }
             }
 
             return sum;
